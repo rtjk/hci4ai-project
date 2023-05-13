@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
+html, body, input.textarea {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  color: #777;
+  margin: 0 auto;
+}
+
+.container-root {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat {
+  list-style: none;
+  background: none;
+  margin: 0;
+  padding: 0 0 50px 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.chat li {
+  padding: 0.5rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.other .msg {
+  border-top-left-radius: 0;
+}
+
+.other:before {
+  content: "";
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid rgba(228, 233, 237, 1);
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.self {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.self .msg {
+  background: #208bf5;
+  border-bottom-right-radius: 0;
+}
+
+.self .msg p {
+  color: #fff;
+}
+
+.self:after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid #208bf5;
+  border-right-color: transparent;
+  border-top-color: transparent;
+}
+
+.msg {
+  background: rgba(228, 233, 237, 1);
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 20px;
+  word-wrap: break-word;
+}
+
+.msg p {
+  font-size: 0.9rem;
+  margin: 0 0 0.2rem 0;
+  color: #565555;
+}
+
+.json-response {
+  position: fixed;
+  margin-left: 20px;
+}
+
+input.textarea {
+  font-size: 0.9rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 99;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#rec{
+  position: fixed;
+  display: inline-block;
+  bottom: 8px;
+  right: 10px;
+  width: 35px;
+  height: 40px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+#mute{
+  position: fixed;
+  display: inline-block;
+  bottom: 8px;
+  right: 50px;
+  width: 35px;
+  height: 40px;
+  z-index: 100;
+  cursor: pointer;
+  background-color: lightgray;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+
